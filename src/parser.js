@@ -47,7 +47,7 @@ module.exports = function(line1, line2, line3) {
       }
       lastTime = time;
       result.data.push({
-        time: time.tz(timezone).format('YYYY-MM-DDTHH:mmZZ'),
+        time: time.tz(timezone).format('YYYY-MM-DD HH:mm:00 ZZ'),
         movement: parseFloat(unquote(tokens2[i])),
         noise: tokens3[i] ? parseFloat(unquote(tokens3[i])) : undefined
       });
